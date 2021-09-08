@@ -1,0 +1,11 @@
+version: "3.3"
+services:
+  youtube-archiver:
+    container_name: youtube-archiver
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./app:/app:ro
+      - ./data:/data
+    restart: unless-stopped
