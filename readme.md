@@ -8,6 +8,9 @@ The container is running the application as root which may be dangerous if you i
 [command injection attacks](https://owasp.org/www-community/attacks/Command_Injection) if its config file is messed with.<br>
 This **will** be fixed once I know how to set that up properly in the Dockerfile.
 
+The Python module named "*[lxml](https://lxml.de/)*" fails to compile, but streamlink will work regardless since it is installed via the
+"*[py3-lxml](https://pkgs.alpinelinux.org/packages?name=py3-lxml)*" package.
+
 ## Installation
 
 Simply clone this repository using the following command:<br>

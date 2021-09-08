@@ -6,15 +6,16 @@ RUN apk add --no-cache bash
 # Used for compiling streamlink
 RUN apk add --no-cache g++ make
 
-# Used by Python's lxml>=4.6.3 included by streamlink (Not sure if they should be removed afterward)
-RUN apk add --no-cache libxslt-dev libxml2-dev
+# Used to compile lxml for streamlink (Ignore the first commented line)
+# RUN apk add --no-cache libxslt-dev libxml2-dev
+RUN apk add --no-cache py3-lxml
 
 # Used for other required tasks
 RUN apk add --no-cache ffmpeg
 
 # Installing required Python packages
-RUN pip install --upgrade streamlink
-RUN pip install --upgrade yt-dlp
+RUN pip -vvv install --upgrade streamlink
+RUN pip -vvv install --upgrade yt-dlp
 
 # Removing packages that are no longer needed (Only used for compiling streamlink)
 # Some are left however (libgcc, libstdc++, libgomp, gmp)
