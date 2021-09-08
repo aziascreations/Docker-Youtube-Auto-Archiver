@@ -6,6 +6,9 @@ RUN apk add --no-cache bash
 # Used for compiling streamlink
 RUN apk add --no-cache g++ make
 
+# Used by Python's lxml>=4.6.3 included by streamlink (Not sure if they should be removed afterward)
+RUN apk add --no-cache libxslt-dev libxml2-dev
+
 # Used for other required tasks
 RUN apk add --no-cache ffmpeg
 
