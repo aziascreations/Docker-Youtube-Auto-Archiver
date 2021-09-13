@@ -14,8 +14,8 @@ RUN apk add --no-cache py3-lxml
 RUN apk add --no-cache ffmpeg
 
 # Installing required Python packages
-RUN pip -vvv install --upgrade streamlink
-RUN pip -vvv install --upgrade yt-dlp
+RUN pip install --upgrade streamlink
+RUN pip install --upgrade yt-dlp
 
 # Removing packages that are no longer needed (Only used for compiling streamlink)
 # Some are left however (libgcc, libstdc++, libgomp, gmp)

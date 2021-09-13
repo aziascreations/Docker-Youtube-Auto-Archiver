@@ -5,7 +5,11 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    environment:
+      YAA_ALLOW_ROOT: 1
+      YAA_CONFIG_PATH: "/data/config.json"
     volumes:
       - ./app:/app:ro
       - ./data:/data
+      - ./config.json:/data/config.json:ro
     restart: unless-stopped

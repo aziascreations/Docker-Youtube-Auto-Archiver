@@ -23,7 +23,9 @@ And run *docker compose* like so in the cloned directory:
 
 For information on how to configure the app, check the relevant section on the project's readme.
 
-For infrmation regarding the configuration of this container, all you have to do is change the `/data` volume if you need it in a specific location.
+For information regarding the configuration of this container, all you have to do is change the `/data` volume if you need it in a specific location.
+
+Please note that the [docker-compose.yml](docker-compose.yml) files already has its environment variables set, as well as an independent config file setup.
 
 ## License
 
