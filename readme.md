@@ -1,4 +1,4 @@
-# Docker - Youtube Auto Archiver
+# Docker - Youtube Auto Archiver <sub><sup>v0.6.1</sup></sub>
 
 Dockerized version of my [Youtube Auto Archiver](https://github.com/aziascreations/Youtube-Auto-Archiver) project.
 
@@ -25,7 +25,7 @@ For information on how to configure the app, check the relevant section on the p
 
 For information regarding the configuration of this container, all you have to do is change the `/data` volume if you need it in a specific location.
 
-Please note that the [docker-compose.yml](docker-compose.yml) files already has its environment variables set, as well as an independent config file setup.
+Please note that the [docker-compose.yml](docker-compose.yml) file already has its environment variables set, as well as an independent config file setup.
 
 ## License
 
